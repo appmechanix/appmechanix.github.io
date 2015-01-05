@@ -20,7 +20,7 @@ layout: default
                 </div>
 
                 <div class="col-md-6">
-                    <h5>Latest posts</h5>
+                    <h5>Latest news</h5>
 
                     <div class="blog-index">
                         {% assign post = site.posts.first %}
@@ -33,7 +33,7 @@ layout: default
                             <a href="{{ root_url }}{{ post.url }}">{{ post.title }}</a>
                             {% endif %}
                         </h1>
-                        <div class="entry-content">{{ content }}</div>
+                        <div class="entry-content">{{ excerpt }}</div>
                     </div>
                 </div>
             </div>
