@@ -244,7 +244,7 @@ h1, h2, h3, h4, h5, h6 {
    ========================================================================== */
 
 #headerwrap {
-    background: url(../img/back.jpg) no-repeat center top;
+    background: url(/assets/img/back.jpg) no-repeat center top;
     margin-top: 0px;
     padding-top: 120px;
     text-align: center;
@@ -296,7 +296,7 @@ h1, h2, h3, h4, h5, h6 {
     height: 60px;
     margin: 0 auto 45px;
     border-top: 1px solid #000;
-    background: url(../img/name-label.png) center bottom no-repeat;
+    background: url(/assets/img/name-label.png) center bottom no-repeat;
     background-size: 35px 35px;
 }
 
@@ -304,7 +304,7 @@ h1, h2, h3, h4, h5, h6 {
     width: 73px;
     height: 17px;
     margin: 38px 0 38px;
-    background: url(../img/name-zig.png) 0 0 no-repeat;
+    background: url(/assets/img/name-zig.png) 0 0 no-repeat;
     background-size: 73px 17px;
 }
 
@@ -325,7 +325,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .about {
-    background-image: url(../img/about-sep.jpg);
+    background-image: url(/assets/img/about-sep.jpg);
 }
 
 /* Portfolio Wrap Section */
@@ -365,7 +365,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .portfolio {
-    background-image: url(../img/portfolio-sep.jpg);
+    background-image: url(/assets/img/portfolio-sep.jpg);
 }
 
 /* Service Wrap */
@@ -426,7 +426,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .contact {
-    background-image: url(../img/contact-sep.jpg);
+    background-image: url(/assets/img/contact-sep.jpg);
 }
 
 #contactwrap label {
@@ -461,7 +461,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .project:hover .photo-wrapper {
     background-color: #2f2f2f;
-    background-image: url(../img/zoom.png);
+    background-image: url(/assets/img/zoom.png);
     background-repeat: no-repeat;
     background-position: center;
     top: 0;
@@ -511,7 +511,7 @@ h1 {
 }
 
 .tech .node {
-    background: url(/img/node.png) no-repeat;
+    background: url(/assets/img/node.png) no-repeat;
     background-size: contain;
 }
 
@@ -651,7 +651,7 @@ section {
 }
 
 .shnappy-macbook {
-    background: url(/img/shnappy-macbook.jpg) no-repeat right;
+    background: url(/assets/img/shnappy-macbook.jpg) no-repeat right;
     background-size: contain;
     width: 100%;
     height: 400px;
