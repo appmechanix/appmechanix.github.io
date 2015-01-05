@@ -1,0 +1,29 @@
+/* LAYOUT */
+/* LINKS */
+/* TEXT */
+/* HERO */
+/* BANNER */
+/* LOVED BY */
+/* SIGN UP */
+/* CONTACT */
+.banner {
+  background: #6abbd9; }
+  .banner .container {
+    padding: 20px 20px 40px; }
+  .banner h3 {
+    margin: 0;
+    color: #ffffff;
+    font-size: 40px;
+    text-align: center; }
+  .banner h4 {
+    margin: 0;
+    padding-top: 10px;
+    color: #ffffff;
+    font-size: 22px;
+    text-align: center; }
+  .banner form {
+    padding-top: 20px; }
+    .banner form input {
+      font-size: 20px; }
+
+/*# sourceMappingURL=banner.css.map */

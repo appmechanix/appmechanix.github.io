@@ -1,0 +1,32 @@
+@import "../config";
+
+.banner {
+  background: $banner-background-color;
+
+  .container {
+    padding: 20px 20px 40px;
+  }
+
+  h3 {
+    margin: 0;
+    color: $banner-text-color;
+    font-size: 40px;
+    text-align: center;
+  }
+
+  h4 {
+    margin: 0;
+    padding-top: 10px;
+    color: $banner-text-color;
+    font-size: 22px;
+    text-align: center;
+  }
+
+  form {
+    padding-top: 20px;
+
+    input {
+      font-size: 20px;
+    }
+  }
+}

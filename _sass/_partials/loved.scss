@@ -1,0 +1,33 @@
+@import "../config";
+
+&.loved {
+  padding: $loved-block-padding;
+  background: url($loved-background-image) no-repeat fixed;
+
+  .feedback {
+    margin: 0 auto;
+    text-align: center;
+
+    blockquote {
+      font-weight: 300;
+      font-size: $loved-font-size;
+
+      @if ($loved-italic-font) {
+        font-style: italic;
+      }
+    }
+
+    img {
+      border-radius: $loved-image-size;
+      width: $loved-image-size;
+    }
+
+    .person {
+      font-weight: 400;
+
+      a {
+        font-weight: 300;
+      }
+    }
+  }
+}

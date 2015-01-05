@@ -1,0 +1,76 @@
+@import 'config';
+
+* {
+  font-family: 'Lato', sans-serif !important;
+}
+
+/* CORE STUFF */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: $link-text-color;
+
+  @if ($link-underline == false) {
+    text-decoration: none;
+  }
+
+  transition: all $link-transition-speed;
+  font-weight: $link-text-weight;
+
+  &:hover {
+    color: $link-text-color-hover;
+  }
+}
+
+.container {
+  width: $container-width;
+  margin: 0 auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* PAGE ITEMS */
+@import "_partials/hero";
+@import "_partials/banner";
+
+section {
+  padding-top: 20px;
+
+  p {
+    line-height: $normal-text-size + 10;
+    font-size: $normal-text-size;
+    font-weight: 300;
+  }
+
+  h3 {
+    margin: 5px;
+    font-size: $section-title-text-size;
+  }
+
+  h4 {
+    margin: 5px;
+    font-size: $section-subtitle-text-size;
+  }
+
+  .info {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    &:first-of-type {
+      padding-top: 0;
+    }
+  }
+
+  /* Include section parts */
+  @import "_partials/loved";
+  @import "_partials/signup";
+  @import "_partials/contact";
+}
+
+@import "_partials/footer";
+@import "_forms/forms";

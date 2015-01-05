@@ -1,0 +1,279 @@
+/* LAYOUT */
+/* The inner width of the site */
+/* LINKS */
+/* The standard color to use for links throughout the site */
+/* The standard hover color to use for links throughout the site */
+/* The weight to use for links throughout the site */
+/* The speed at which to transition from normal to hover state */
+/* The standard underline property to use for links throughout the site */
+/* TEXT */
+/* Standard text size for content */
+/* Size of standard titles */
+/* Size of standard sub-titles */
+/* HERO */
+/* BANNER */
+/* LOVED BY */
+/* SIGN UP */
+/* CONTACT */
+* {
+  font-family: 'Lato', sans-serif !important; }
+
+/* CORE STUFF */
+body {
+  margin: 0;
+  padding: 0; }
+
+a {
+  color: #f87c45;
+  text-decoration: none;
+  transition: all 0.5s;
+  font-weight: 400; }
+  a:hover {
+    color: #000000; }
+
+.container {
+  width: 1024px;
+  margin: 0 auto; }
+
+.text-center {
+  text-align: center; }
+
+/* PAGE ITEMS */
+/* LAYOUT */
+/* The inner width of the site */
+/* LINKS */
+/* The standard color to use for links throughout the site */
+/* The standard hover color to use for links throughout the site */
+/* The weight to use for links throughout the site */
+/* The speed at which to transition from normal to hover state */
+/* The standard underline property to use for links throughout the site */
+/* TEXT */
+/* Standard text size for content */
+/* Size of standard titles */
+/* Size of standard sub-titles */
+/* HERO */
+/* BANNER */
+/* LOVED BY */
+/* SIGN UP */
+/* CONTACT */
+header {
+  margin: 0;
+  background: url("https://ununsplash.imgix.net/41/yEWFnFQRqfmY9l9efJ6g_Snap01-web.jpg?q=75&fm=jpg&s=0b03a0a8951359c023cd69af1d325afc") no-repeat fixed;
+  background-size: cover; }
+  header h1 {
+    margin: 0;
+    padding-top: 20px;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 24px;
+    text-transform: uppercase; }
+  header h2 {
+    margin: 0;
+    text-align: center;
+    color: #ffffff;
+    font-weight: 900;
+    font-size: 60px;
+    text-shadow: #666 1px 1px; }
+  header h3 {
+    margin: 0;
+    text-align: center;
+    color: #ffffff;
+    font-weight: 900;
+    font-size: 30px;
+    text-shadow: #666 1px 1px; }
+  header .cta {
+    background: #f87c45;
+    color: #ffffff;
+    font-size: 24px;
+    margin-top: 20px; }
+  header .v-center {
+    position: absolute;
+    left: 0;
+    right: 0; }
+
+/* LAYOUT */
+/* The inner width of the site */
+/* LINKS */
+/* The standard color to use for links throughout the site */
+/* The standard hover color to use for links throughout the site */
+/* The weight to use for links throughout the site */
+/* The speed at which to transition from normal to hover state */
+/* The standard underline property to use for links throughout the site */
+/* TEXT */
+/* Standard text size for content */
+/* Size of standard titles */
+/* Size of standard sub-titles */
+/* HERO */
+/* BANNER */
+/* LOVED BY */
+/* SIGN UP */
+/* CONTACT */
+.banner {
+  background: #6abbd9; }
+  .banner .container {
+    padding: 20px 20px 40px; }
+  .banner h3 {
+    margin: 0;
+    color: #ffffff;
+    font-size: 40px;
+    text-align: center; }
+  .banner h4 {
+    margin: 0;
+    padding-top: 10px;
+    color: #ffffff;
+    font-size: 22px;
+    text-align: center; }
+  .banner form {
+    padding-top: 20px; }
+    .banner form input {
+      font-size: 20px; }
+
+section {
+  padding-top: 20px;
+  /* Include section parts */
+  /* LAYOUT */
+  /* The inner width of the site */
+  /* LINKS */
+  /* The standard color to use for links throughout the site */
+  /* The standard hover color to use for links throughout the site */
+  /* The weight to use for links throughout the site */
+  /* The speed at which to transition from normal to hover state */
+  /* The standard underline property to use for links throughout the site */
+  /* TEXT */
+  /* Standard text size for content */
+  /* Size of standard titles */
+  /* Size of standard sub-titles */
+  /* HERO */
+  /* BANNER */
+  /* LOVED BY */
+  /* SIGN UP */
+  /* CONTACT */
+  /* LAYOUT */
+  /* The inner width of the site */
+  /* LINKS */
+  /* The standard color to use for links throughout the site */
+  /* The standard hover color to use for links throughout the site */
+  /* The weight to use for links throughout the site */
+  /* The speed at which to transition from normal to hover state */
+  /* The standard underline property to use for links throughout the site */
+  /* TEXT */
+  /* Standard text size for content */
+  /* Size of standard titles */
+  /* Size of standard sub-titles */
+  /* HERO */
+  /* BANNER */
+  /* LOVED BY */
+  /* SIGN UP */
+  /* CONTACT */
+  /* LAYOUT */
+  /* The inner width of the site */
+  /* LINKS */
+  /* The standard color to use for links throughout the site */
+  /* The standard hover color to use for links throughout the site */
+  /* The weight to use for links throughout the site */
+  /* The speed at which to transition from normal to hover state */
+  /* The standard underline property to use for links throughout the site */
+  /* TEXT */
+  /* Standard text size for content */
+  /* Size of standard titles */
+  /* Size of standard sub-titles */
+  /* HERO */
+  /* BANNER */
+  /* LOVED BY */
+  /* SIGN UP */
+  /* CONTACT */ }
+  section p {
+    line-height: 30px;
+    font-size: 20px;
+    font-weight: 300; }
+  section h3 {
+    margin: 5px;
+    font-size: 32px; }
+  section h4 {
+    margin: 5px;
+    font-size: 28px; }
+  section .info {
+    padding-top: 60px;
+    padding-bottom: 60px; }
+    section .info:first-of-type {
+      padding-top: 0; }
+  section.loved {
+    padding: 60px;
+    background: url("https://unsplash.imgix.net/uploads/14120938606568dde6e2b/c9e42240?q=75&fm=jpg&s=30cfed70f59bbfce34b374e629bb5f84") no-repeat fixed; }
+    section.loved .feedback {
+      margin: 0 auto;
+      text-align: center; }
+      section.loved .feedback blockquote {
+        font-weight: 300;
+        font-size: 20px;
+        font-style: italic; }
+      section.loved .feedback img {
+        border-radius: 80px;
+        width: 80px; }
+      section.loved .feedback .person {
+        font-weight: 400; }
+        section.loved .feedback .person a {
+          font-weight: 300; }
+  section.signup h3 {
+    color: #f87c45; }
+  section.signup .plans {
+    margin-top: 40px; }
+    section.signup .plans .plan {
+      width: 32.6%;
+      margin-right: 1%;
+      padding-top: 30px; }
+      section.signup .plans .plan:last-of-type {
+        margin-right: 0; }
+    section.signup .plans h4 {
+      text-align: center; }
+    section.signup .plans hr {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      border: 1px solid #ffffff;
+      width: 20%; }
+    section.signup .plans p.price {
+      font-size: 80px;
+      text-align: center;
+      margin: 36px; }
+    section.signup .plans .basic {
+      background: #424a56;
+      color: #ffffff; }
+    section.signup .plans .standard {
+      background: #f87c45;
+      color: #ffffff; }
+    section.signup .plans .premium {
+      background: #6abbd9;
+      color: #ffffff; }
+    section.signup .plans ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      width: 98%; }
+      section.signup .plans ul li {
+        color: #999;
+        border-bottom: 1px solid #999;
+        padding: 20px; }
+  section.contact {
+    background: blue; }
+
+/* LAYOUT */
+/* The inner width of the site */
+/* LINKS */
+/* The standard color to use for links throughout the site */
+/* The standard hover color to use for links throughout the site */
+/* The weight to use for links throughout the site */
+/* The speed at which to transition from normal to hover state */
+/* The standard underline property to use for links throughout the site */
+/* TEXT */
+/* Standard text size for content */
+/* Size of standard titles */
+/* Size of standard sub-titles */
+/* HERO */
+/* BANNER */
+/* LOVED BY */
+/* SIGN UP */
+/* CONTACT */
+form input[type='text'], form input[type='submit'], form input[type='email'], form input[type='password'] {
+  width: 95%; }
+
+/*# sourceMappingURL=appmech.css.map */

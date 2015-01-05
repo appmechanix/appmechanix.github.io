@@ -1,0 +1,66 @@
+@import "../config";
+
+&.signup {
+  h3 {
+    color: $signup-title-color;
+  }
+
+  .plans {
+    margin-top: 40px;
+
+    .plan {
+      width: 32.6%;
+      margin-right: 1%;
+      padding-top: $signup-plan-padding;
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+
+    h4 {
+      text-align: center;
+    }
+
+    hr {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      border: ($signup-line-thickness / 2) solid $signup-divider-background;
+      width: 20%;
+    }
+
+    p.price {
+      font-size: $signup-price-size;
+      text-align: center;
+      margin: 36px;
+    }
+
+    .basic {
+      background: $signup-basic-background;
+      color: $signup-basic-text-color;
+    }
+
+    .standard {
+      background: $signup-standard-background;
+      color: $signup-standard-text-color;
+    }
+
+    .premium {
+      background: $signup-premium-background;
+      color: $signup-premium-text-color;
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      width: 98%;
+
+      li {
+        color: $signup-details-border-color;
+        border-bottom: 1px solid $signup-details-border-color;
+        padding: 20px;
+      }
+    }
+  }
+}
