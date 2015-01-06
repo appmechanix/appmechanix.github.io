@@ -1,0 +1,25 @@
+/*
+ * -- LAYOUT STYLES --
+ * These are some useful classes which I will need
+ */
+/* line 7, ../../_sass/_partials/layout.scss */
+.l-box {
+  padding: 1em;
+}
+
+/* line 11, ../../_sass/_partials/layout.scss */
+.l-box-lrg {
+  padding: 2em;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* line 16, ../../_sass/_partials/layout.scss */
+.is-center {
+  text-align: center;
+}
+
+/* line 20, ../../_sass/_partials/layout.scss */
+.container {
+  width: 960px;
+  margin: 0 auto;
+}

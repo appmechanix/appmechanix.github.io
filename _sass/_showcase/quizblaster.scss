@@ -1,0 +1,36 @@
+@import "../_config/config";
+
+body.quizblaster {
+  background: #00b3fe;
+
+  .content {
+    padding: 0;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .content-wrapper {
+    background: #00b3fe;
+  }
+
+  .quizblaster-inner {
+    width: $container-width;
+    margin: 0 auto;
+  }
+
+  .slice {
+    background-color: white;
+    padding: 40px 0;
+    margin: 40px 0;
+
+    &.nopadding {
+      padding: 0;
+    }
+  }
+
+  h3.title {
+    color: white;
+  }
+}
