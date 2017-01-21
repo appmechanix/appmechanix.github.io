@@ -1,769 +1,99 @@
-/*
- * Author: Carlos Alvarez
- * URL: http://Alvarez.is
- *
- * Project Name: NYC Design
- * Version: 1.0
- * Date: 04-20-2014
- * URL:
- */
-/* ==========================================================================
-   Base Styles, Bootstrap Modifications & Fonts Import
-   ========================================================================== */
-@import url(http://fonts.googleapis.com/css?family=Oswald:400,300,700);
-@import url(http://fonts.googleapis.com/css?family=Lato:400,700);
-/* line 16, ../_sass/main.scss */
-html,
-button,
-input,
-select,
-textarea {
-  color: #222;
-}
-
-/*
- * Remove text-shadow in selection highlight: h5bp.com/i
- * These selection rule sets have to be separate.
- * Customize the background color to match your design.
- */
-/* line 30, ../_sass/main.scss */
-::-moz-selection {
-  background: #f2c2c9;
-  color: #a4003a;
-  text-shadow: none;
-}
-
-/* line 36, ../_sass/main.scss */
-::selection {
-  background: #16a085;
-  color: #a4003a;
-  text-shadow: none;
-}
-
-/*
- * A better looking default horizontal rule
- */
-/* line 46, ../_sass/main.scss */
-hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #ccc;
-  margin: 1em 0;
-  padding: 0;
-}
-
-/* line 55, ../_sass/main.scss */
-.centered {
-  text-align: center;
-}
-
-/* ==========================================================================
-   General styles
-   ========================================================================== */
-/* line 63, ../_sass/main.scss */
-html,
-body {
-  height: 100%;
-}
-
-/* line 68, ../_sass/main.scss */
-body {
-  font-family: "Lato" sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  color: #000;
-  -webkit-font-smoothing: antialiased;
-  -webkit-overflow-scrolling: touch;
-}
-
-/* line 78, ../_sass/main.scss */
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Oswald", sans-serif;
-  font-weight: 300;
-}
-
-/* ==========================================================================
-   MENU CONFIGURATION
-   ========================================================================== */
-/* line 87, ../_sass/main.scss */
-.menu {
-  position: fixed;
-  right: -200px;
-  width: 260px;
-  height: 100%;
-  top: 0;
-  z-index: 10;
-  text-align: left;
-}
-
-/* line 97, ../_sass/main.scss */
-.menu.menu-open {
-  right: 0px;
-}
-
-/* line 101, ../_sass/main.scss */
-.menu-wrap {
-  position: absolute;
-  top: 0;
-  left: 60px;
-  background: #1a1a1a;
-  width: 200px;
-  height: 100%;
-}
-
-/* line 110, ../_sass/main.scss */
-.menu h1.logo a {
-  font-family: "Oswald", sans-serif;
-  font-size: 16px;
-  font-weight: 700;
-  letter-spacing: 0.15em;
-  line-height: 40px;
-  text-transform: uppercase;
-  color: #ffffff;
-  margin-top: 20px;
-}
-
-/* line 121, ../_sass/main.scss */
-.menu h1.logo a:hover {
-  color: #f85c37;
-}
-
-/* line 125, ../_sass/main.scss */
-.menu img.logo {
-  margin: 20px 0;
-  max-width: 160px;
-}
-
-/* line 130, ../_sass/main.scss */
-.menu a {
-  margin-left: 20px;
-  color: #808080;
-  display: block;
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 40px;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-}
-
-/* line 141, ../_sass/main.scss */
-.menu a:hover {
-  color: #ffffff;
-}
-
-/* line 145, ../_sass/main.scss */
-.menu a:active {
-  color: #ffffff;
-}
-
-/* line 149, ../_sass/main.scss */
-.menu a > i {
-  float: left;
-  display: inline-block;
-  vertical-align: middle;
-  text-align: left;
-  width: 25px;
-  font-size: 14px;
-  line-height: 40px;
-  margin: 25px 2px;
-}
-
-/* line 160, ../_sass/main.scss */
-.menu-close {
-  cursor: pointer;
-  display: block;
-  position: absolute;
-  font-size: 14px;
-  color: #808080;
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
-  top: 20px;
-  right: 5px;
-  -webkit-transition: all .1s ease-in-out;
-  -moz-transition: all .1s ease-in-out;
-  -ms-transition: all .1s ease-in-out;
-  -o-transition: all .1s ease-in-out;
-  transition: all .1s ease-in-out;
-}
-
-/* line 178, ../_sass/main.scss */
-.menu-close:hover {
-  color: #ffffff;
-  -webkit-transition: all .1s ease-in-out;
-  -moz-transition: all .1s ease-in-out;
-  -ms-transition: all .1s ease-in-out;
-  -o-transition: all .1s ease-in-out;
-  transition: all .1s ease-in-out;
-}
-
-/* Push the body after clicking the menu button */
-/* line 188, ../_sass/main.scss */
-.body-push {
-  overflow-x: hidden;
-  position: relative;
-  left: 0;
-}
-
-/* line 194, ../_sass/main.scss */
-.body-push-toright {
-  left: 200px;
-}
-
-/* line 198, ../_sass/main.scss */
-.body-push-toleft {
-  left: -200px;
-}
-
-/* line 202, ../_sass/main.scss */
-.menu,
-.body-push {
-  -webkit-transition: all .3s ease;
-  -moz-transition: all .3s ease;
-  -ms-transition: all .3s ease;
-  -o-transition: all .3s ease;
-  transition: all .3s ease;
-}
-
-/* line 211, ../_sass/main.scss */
-#menuToggle {
-  position: absolute;
-  top: 20px;
-  left: 0;
-  z-index: 11;
-  display: block;
-  text-align: center;
-  font-size: 14px;
-  color: #ffffff;
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
-  cursor: pointer;
-  background: rgba(0, 0, 0, 0.25);
-  -webkit-transition: all .1s ease-in-out;
-  -moz-transition: all .1s ease-in-out;
-  -ms-transition: all .1s ease-in-out;
-  -o-transition: all .1s ease-in-out;
-  transition: all .1s ease-in-out;
-}
-
-/* line 232, ../_sass/main.scss */
-#menuToggle:hover {
-  color: #ffffff;
-  background: rgba(0, 0, 0, 0.2);
-  -webkit-transition: all .1s ease-in-out;
-  -moz-transition: all .1s ease-in-out;
-  -ms-transition: all .1s ease-in-out;
-  -o-transition: all .1s ease-in-out;
-  transition: all .1s ease-in-out;
-}
-
-/* ==========================================================================
-   Wrap Sections
-   ========================================================================== */
-/* line 246, ../_sass/main.scss */
-#headerwrap {
-  background: url(../img/back.jpg) no-repeat center top;
-  margin-top: 0px;
-  padding-top: 120px;
-  text-align: center;
-  background-attachment: relative;
-  background-position: center center;
-  min-height: 700px;
-  width: 100%;
-  -webkit-background-size: 100%;
-  -moz-background-size: 100%;
-  -o-background-size: 100%;
-  background-size: 100%;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
-/* line 267, ../_sass/main.scss */
-#headerwrap h1 {
-  color: #ffffff;
-  margin-top: 90px;
-  padding-bottom: 30px;
-  letter-spacing: 8px;
-  font-size: 100px;
-  font-weight: bold;
-  text-shadow: 2px 2px 2px #000;
-}
-
-/* About Wrap & Conf */
-/* line 278, ../_sass/main.scss */
-#aboutwrap {
-  margin-top: 80px;
-  margin-bottom: 80px;
-}
-
-/* line 283, ../_sass/main.scss */
-.name {
-  text-align: center;
-}
-
-/* line 287, ../_sass/main.scss */
-.name p {
-  font-size: 22px;
-  font-weight: lighter;
-  margin-top: 15px;
-  letter-spacing: 2px;
-}
-
-/* line 294, ../_sass/main.scss */
-.name-label {
-  width: 60px;
-  height: 60px;
-  margin: 0 auto 45px;
-  border-top: 1px solid #000;
-  background: url(../img/name-label.png) center bottom no-repeat;
-  background-size: 35px 35px;
-}
-
-/* line 303, ../_sass/main.scss */
-.name-zig {
-  width: 73px;
-  height: 17px;
-  margin: 38px 0 38px;
-  background: url(../img/name-zig.png) 0 0 no-repeat;
-  background-size: 73px 17px;
-}
-
-/* line 311, ../_sass/main.scss */
-.name-desc h2 {
-  font-family: 'Oswald', sans-serif;
-  font-size: 40px;
-  line-height: 1.45;
-  font-weight: 300;
-}
-
-/* Separator About - Parallax Section */
-/* line 319, ../_sass/main.scss */
-.sep {
-  background-attachment: fixed;
-  background-position: 50% 0;
-  background-repeat: no-repeat;
-  height: 600px;
-  position: relative;
-}
-
-/* line 327, ../_sass/main.scss */
-.about {
-  background-image: url(../img/about-sep.jpg);
-}
-
-/* Portfolio Wrap Section */
-/* line 332, ../_sass/main.scss */
-#portfoliowrap {
-  display: block;
-  margin-top: 80px;
-  margin-bottom: 80px;
-}
-
-/* line 338, ../_sass/main.scss */
-#portfoliowrap h1 {
-  font-weight: 300;
-  text-align: center;
-  margin-bottom: 50px;
-}
-
-/* line 344, ../_sass/main.scss */
-.mt {
-  margin-top: 50px;
-}
-
-/* line 348, ../_sass/main.scss */
-.mb {
-  margin-bottom: 60px;
-}
-
-/* line 352, ../_sass/main.scss */
-#portfoliowrap i {
-  font-size: 50px;
-}
-
-/* line 356, ../_sass/main.scss */
-.proc {
-  padding-top: 15px;
-  padding-bottom: 15px;
-  border-bottom: solid 2px transparent;
-}
-
-/* line 362, ../_sass/main.scss */
-#portfoliowrap .proc:hover {
-  background-color: #eee;
-  border-bottom: solid 2px #2f2f2f;
-}
-
-/* line 367, ../_sass/main.scss */
-.portfolio {
-  background-image: url(../img/portfolio-sep.jpg);
-}
-
-/* Service Wrap */
-/* line 372, ../_sass/main.scss */
-#servicewrap {
-  display: block;
-  margin-top: 80px;
-  margin-bottom: 80px;
-}
-
-/* line 378, ../_sass/main.scss */
-#servicewrap h1 {
-  font-weight: 300;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-/* line 384, ../_sass/main.scss */
-.service {
-  text-align: left;
-}
-
-/* line 388, ../_sass/main.scss */
-.service small {
-  font-size: 12px;
-  font-weight: bold;
-}
-
-/* line 393, ../_sass/main.scss */
-.service i {
-  float: left;
-  margin-right: 15px;
-  font-size: 30px;
-  vertical-align: middle;
-}
-
-/* line 400, ../_sass/main.scss */
-.service .text {
-  color: #767676;
-}
-
-/* Testimonials Wrap */
-/* line 405, ../_sass/main.scss */
-#testimonials {
-  display: block;
-  margin-top: 80px;
-  margin-bottom: 80px;
-  background-color: #f3f3f3;
-}
-
-/* Contact Wrap */
-/* line 413, ../_sass/main.scss */
-#contactwrap {
-  background-color: #2f2f2f;
-  margin-top: 0px;
-  padding-top: 25px;
-  padding-bottom: 25px;
-}
-
-/* line 420, ../_sass/main.scss */
-#contactwrap p {
-  color: #f2f2f2;
-}
-
-/* line 424, ../_sass/main.scss */
-#contactwrap small {
-  font-size: 13px;
-}
-
-/* line 428, ../_sass/main.scss */
-.contact {
-  background-image: url(../img/contact-sep.jpg);
-}
-
-/* line 432, ../_sass/main.scss */
-#contactwrap label {
-  color: #f2f2f2;
-  margin-top: 10px;
-}
-
-/* Gallery Configuration */
-/* line 438, ../_sass/main.scss */
-.photo-wrapper {
-  display: block;
-  position: relative;
-  overflow: hidden;
-  background-color: #2f2f2f;
-  -webkit-transition: background-color 0.4s;
-  -moz-transition: background-color 0.4s;
-  -o-transition: background-color 0.4s;
-  transition: background-color 0.4s;
-}
-
-/* line 449, ../_sass/main.scss */
-.project .overlay {
-  position: absolute;
-  text-align: center;
-  color: #fff;
-  opacity: 0;
-  filter: alpha(opacity=0);
-  -webkit-transition: opacity 0.4s;
-  -moz-transition: opacity 0.4s;
-  -o-transition: opacity 0.4s;
-  transition: opacity 0.4s;
-}
-
-/* line 462, ../_sass/main.scss */
-.project:hover .photo-wrapper {
-  background-color: #2f2f2f;
-  background-image: url(../img/zoom.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  position: relative;
-}
-
-/* line 474, ../_sass/main.scss */
-.project:hover .photo {
-  opacity: 10;
-  filter: alpha(opacity=4000);
-  opacity: 0.1;
-  filter: alpha(opacity=40);
-}
-
-/* line 481, ../_sass/main.scss */
-.project:hover .overlay {
-  opacity: 100;
-  filter: alpha(opacity=10000);
-  opacity: 1;
-  filter: alpha(opacity=100);
-}
-
-/* line 488, ../_sass/main.scss */
-.desc {
-  margin-top: 25px;
-}
-
-/* line 492, ../_sass/main.scss */
-h1 {
-  text-transform: uppercase;
-}
-
-/* line 496, ../_sass/main.scss */
-.page-header {
-  min-height: 133px;
-}
-
-/* line 500, ../_sass/main.scss */
-.uppercase {
-  text-transform: uppercase;
-}
-
-/* line 504, ../_sass/main.scss */
-.text {
-  text-align: center;
-}
-
-/* line 508, ../_sass/main.scss */
-.tech div {
-  margin-right: 10px;
-  float: left;
-}
-
-/* line 513, ../_sass/main.scss */
-.tech .node {
-  background: url(/img/node.png) no-repeat;
-  background-size: contain;
-}
-
-/* line 518, ../_sass/main.scss */
-.casestudy {
-  margin-top: -20px;
-}
-
-/* line 522, ../_sass/main.scss */
-.casestudy .title {
-  background: #fafafa;
-  height: 200px;
-  border-bottom: 1px solid #eee;
-}
-
-/* line 528, ../_sass/main.scss */
-.btn.btn-cta {
-  border-radius: 0 !important;
-  font-size: 18px;
-  padding: 10px;
-  width: 30%;
-  margin-top: 20px;
-}
-
-/* line 536, ../_sass/main.scss */
-.fadeinbody {
-  opacity: 0;
-  transition: all 0.5s;
-}
-
-/* line 541, ../_sass/main.scss */
-.fadeinbody.show {
-  opacity: 1;
-}
-
-/* line 545, ../_sass/main.scss */
-.offset {
-  transition: all 0.5s;
-}
-
-/* line 549, ../_sass/main.scss */
-.offset-left {
-  margin-left: -80%;
-}
-
-/* line 553, ../_sass/main.scss */
-.offset-right {
-  margin-right: 80%;
-}
-
-/* line 557, ../_sass/main.scss */
-.offset.done {
-  margin-left: 0;
-  margin-right: 0;
-}
-
-/* line 562, ../_sass/main.scss */
-img#hero-w8 {
-  margin-top: -20px;
-}
-
-/* line 566, ../_sass/main.scss */
-img#hero-iphone {
-  position: absolute;
-  left: 110%;
-  top: 33px;
-  width: 260px;
-  transition-delay: 0.1s;
-  z-index: 3;
-}
-
-/* line 575, ../_sass/main.scss */
-img#hero-iphone.done {
-  left: 63%;
-}
-
-/* line 579, ../_sass/main.scss */
-img#hero-lumia {
-  position: absolute;
-  right: -100%;
-  top: 50px;
-  width: 260px;
-  transition-delay: 0.2s;
-  z-index: 2;
-}
-
-/* line 588, ../_sass/main.scss */
-img#hero-lumia.done {
-  right: 0;
-}
-
-/* line 592, ../_sass/main.scss */
-section {
-  overflow-x: hidden;
-}
-
-@media (max-width: 990px) {
-  /* line 597, ../_sass/main.scss */
-  img#hero-w8.done {
-    margin-left: -20%;
-  }
-
-  /* line 601, ../_sass/main.scss */
-  img#hero-iphone {
-    top: 0;
-  }
-
-  /* line 605, ../_sass/main.scss */
-  img#hero-lumia.done {
-    top: 30px;
-    left: 80%;
-    right: 0%;
-  }
-}
-@media (max-width: 800px) {
-  /* line 613, ../_sass/main.scss */
-  img#hero-iphone {
-    width: 30%;
-    top: 60px;
-  }
-
-  /* line 618, ../_sass/main.scss */
-  img#hero-lumia.done {
-    width: 30%;
-  }
-}
-@media (max-width: 550px) {
-  /* line 625, ../_sass/main.scss */
-  img#hero-iphone {
-    width: 30%;
-    top: 40px;
-  }
-
-  /* line 630, ../_sass/main.scss */
-  img#hero-lumia.done {
-    width: 30%;
-  }
-}
-/* line 635, ../_sass/main.scss */
-.shnappy-macbook {
-  background: url(/img/shnappy-macbook.jpg) no-repeat right;
-  background-size: contain;
-  width: 100%;
-  height: 400px;
-  position: relative;
-  right: -25px;
-}
-
-/* line 644, ../_sass/main.scss */
-header {
-  background: url(/img/back.jpg) no-repeat center;
-  background-size: cover;
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
   margin: 0;
   padding: 0;
-}
-/* line 650, ../_sass/main.scss */
-header .page-header {
-  margin-top: 0;
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
+  border: 0;
+  font-size: 100%;
+  font-weight: 200;
+  font: inherit;
+  vertical-align: baseline; }
 
-/* line 3, ../_sass/_showcase/quizblaster.scss */
-body.quizblaster {
-  background: #00b3fe;
-}
-/* line 6, ../_sass/_showcase/quizblaster.scss */
-body.quizblaster .content {
-  padding: 0;
-}
-/* line 10, ../_sass/_showcase/quizblaster.scss */
-body.quizblaster .container {
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+* {
+  font-family: 'Roboto', sans-serif !important; }
+
+body {
+  background: white; }
+
+.panel {
   width: 100%;
-}
-/* line 14, ../_sass/_showcase/quizblaster.scss */
-body.quizblaster .content-wrapper {
-  background: #00b3fe;
-}
-/* line 18, ../_sass/_showcase/quizblaster.scss */
-body.quizblaster .quizblaster-inner {
-  width: 960px;
-  margin: 0 auto;
-}
-/* line 23, ../_sass/_showcase/quizblaster.scss */
-body.quizblaster .slice {
-  background-color: white;
-  padding: 40px 0;
-  margin: 40px 0;
-}
-/* line 28, ../_sass/_showcase/quizblaster.scss */
-body.quizblaster .slice.nopadding {
-  padding: 0;
-}
-/* line 33, ../_sass/_showcase/quizblaster.scss */
-body.quizblaster h3.title {
-  color: white;
-}
+  border-bottom: 2px solid white;
+  padding-top: 100px;
+  padding-bottom: 100px; }
+  .panel .container {
+    max-width: 820px;
+    margin: 0 auto; }
+  .panel h3, .panel h4 {
+    color: white;
+    text-align: center; }
+  .panel h3 {
+    font-size: 32px;
+    padding-bottom: 20px; }
+  .panel h4 {
+    font-size: 24px; }
+  .panel img {
+    max-width: 100%; }
+  .panel.panel--hero {
+    background: white url(/img/hero.jpg) no-repeat center;
+    background-size: cover; }
+    .panel.panel--hero h1 {
+      text-align: center;
+      font-size: 48px; }
+    .panel.panel--hero h2 {
+      text-align: center;
+      font-size: 32px; }
+  .panel.panel--shnappy {
+    background: radial-gradient(at bottom, #ff87dc, #ea2378 80%); }
+  .panel.panel--quizblaster {
+    background: radial-gradient(at bottom, #64ffff, #00b3fe 80%); }
+    .panel.panel--quizblaster img {
+      max-width: 90%;
+      padding-left: 5%; }
+  .panel.panel--hooq {
+    background: radial-gradient(at bottom, #d8ffff, #74cfae 80%); }
+  .panel.panel--siteshot {
+    background: radial-gradient(at bottom, #64f9ff, #0095a0 80%); }
+
+footer {
+  background: #666;
+  padding: 40px;
+  color: white; }
+  footer p {
+    text-align: center; }

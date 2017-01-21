@@ -1,0 +1,67 @@
+.panel {
+  width: 100%;
+  border-bottom: 2px solid white;
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  .container {
+    max-width: 820px;
+    margin: 0 auto;
+  }
+
+  h3, h4 {
+    color: white;
+    text-align: center;
+  }
+
+  h3 {
+    font-size: 32px;
+    padding-bottom: 20px;
+
+  }
+
+  h4 {
+    font-size: 24px;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  &.panel--hero {
+    background: white url(/img/hero.jpg) no-repeat center;
+    background-size: cover;
+
+    h1 {
+
+      text-align: center;
+      font-size: 48px;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 32px;
+    }
+  }
+
+  &.panel--shnappy {
+    background: radial-gradient(at bottom, #ea2378 + 100, #ea2378 80%);
+  }
+
+  &.panel--quizblaster {
+    background: radial-gradient(at bottom, #00b3fe + 100, #00b3fe 80%);
+
+    img {
+      max-width: 90%;
+      padding-left: 5%;
+    }
+  }
+
+  &.panel--hooq {
+    background: radial-gradient(at bottom, #74cfae + 100, #74cfae 80%);
+  }
+
+  &.panel--siteshot {
+    background: radial-gradient(at bottom, #0095a0 + 100, #0095a0 80%);
+  }
+}

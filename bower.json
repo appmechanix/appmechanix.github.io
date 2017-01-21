@@ -1,19 +1,23 @@
 {
-  "name": "AppMechanix",
-  "version": "1.0.0",
-  "homepage": "https://github.com/dwnz/AppMechanix",
+  "name": "appmechanix.github.io",
+  "description": "",
+  "main": "index.js",
   "authors": [
     "Daniel Wylie <daniel@danielwylie.me>"
   ],
-  "license": "MIT",
+  "license": "ISC",
+  "homepage": "https://github.com/appmechanix/appmechanix.github.io",
+  "private": true,
   "ignore": [
     "**/.*",
     "node_modules",
     "bower_components",
+    "components",
     "test",
     "tests"
   ],
   "dependencies": {
-    "ScrollMagic": "~1.2.2"
+    "waypoints": "^4.0.1",
+    "smooth-scroll": "^1.0.1"
   }
 }
