@@ -1,7 +1,14 @@
 @import "reset";
+@import "colours";
 
 * {
   font-family: 'Roboto', sans-serif !important;
+}
+
+::selection {
+  color: #ffffff;
+  background: $qb;
+  /* WebKit/Blink Browsers */
 }
 
 body {
@@ -17,6 +24,10 @@ p {
   margin: 0 auto;
 }
 
+.text--commingsoon {
+  text-align: center;
+  font-weight: bold;
+}
 
 @import "panel";
 @import "buttons";

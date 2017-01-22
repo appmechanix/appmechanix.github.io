@@ -24,4 +24,18 @@
       color: $qb;
     }
   }
+
+  &.btn--hooq {
+    &:hover {
+      background: white;
+      color: $hooq;
+    }
+  }
+
+  &.btn--siteshot {
+    &:hover {
+      background: white;
+      color: $siteshot;
+    }
+  }
 }

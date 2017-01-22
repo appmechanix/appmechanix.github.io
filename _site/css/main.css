@@ -49,6 +49,11 @@ table {
 * {
   font-family: 'Roboto', sans-serif !important; }
 
+::selection {
+  color: #ffffff;
+  background: #00b3fe;
+  /* WebKit/Blink Browsers */ }
+
 body {
   background: white; }
 
@@ -58,6 +63,10 @@ p {
 .container {
   max-width: 820px;
   margin: 0 auto; }
+
+.text--commingsoon {
+  text-align: center;
+  font-weight: bold; }
 
 .panel {
   width: 100%;
@@ -82,7 +91,8 @@ p {
     color: white;
     margin-top: 20px; }
   .panel img {
-    max-width: 100%; }
+    min-width: 90%;
+    max-width: 90%; }
   .panel.panel--hero {
     background: white url(/img/hero.jpg) no-repeat center;
     background-size: cover; }
@@ -99,15 +109,26 @@ p {
       color: #333; }
   .panel.panel--shnappy {
     background: radial-gradient(at bottom, #ff87dc, #ea2378 80%); }
+    .panel.panel--shnappy ::selection {
+      color: #ffffff;
+      background: #ea2378; }
   .panel.panel--quizblaster {
     background: radial-gradient(at bottom, #64ffff, #00b3fe 80%); }
-    .panel.panel--quizblaster img {
-      max-width: 90%;
-      padding-left: 5%; }
+    .panel.panel--quizblaster ::selection {
+      color: #ffffff;
+      background: #00b3fe; }
   .panel.panel--hooq {
     background: radial-gradient(at bottom, #d8ffff, #74cfae 80%); }
+    .panel.panel--hooq ::selection {
+      color: #ffffff;
+      background: #74cfae; }
   .panel.panel--siteshot {
     background: radial-gradient(at bottom, #64f9ff, #0095a0 80%); }
+    .panel.panel--siteshot ::selection {
+      color: #ffffff;
+      background: #0095a0; }
+  .panel .panel--screenshot {
+    text-align: center; }
 
 .btn {
   border: 2px solid white;
@@ -125,6 +146,12 @@ p {
   .btn.btn--quizblaster:hover {
     background: white;
     color: #00b3fe; }
+  .btn.btn--hooq:hover {
+    background: white;
+    color: #74cfae; }
+  .btn.btn--siteshot:hover {
+    background: white;
+    color: #0095a0; }
 
 .contact {
   background: #666666;

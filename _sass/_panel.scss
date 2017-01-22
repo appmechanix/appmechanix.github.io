@@ -39,7 +39,8 @@
   }
 
   img {
-    max-width: 100%;
+    min-width: 90%;
+    max-width: 90%;
   }
 
   &.panel--hero {
@@ -68,22 +69,41 @@
 
   &.panel--shnappy {
     background: radial-gradient(at bottom, $shnappy + 100, $shnappy 80%);
+
+    ::selection {
+      color: #ffffff;
+      background: $shnappy;
+    }
   }
 
   &.panel--quizblaster {
     background: radial-gradient(at bottom, $qb + 100, $qb 80%);
 
-    img {
-      max-width: 90%;
-      padding-left: 5%;
+    ::selection {
+      color: #ffffff;
+      background: $qb;
     }
   }
 
   &.panel--hooq {
     background: radial-gradient(at bottom, $hooq + 100, $hooq 80%);
+
+    ::selection {
+      color: #ffffff;
+      background: $hooq;
+    }
   }
 
   &.panel--siteshot {
     background: radial-gradient(at bottom, $siteshot + 100, $siteshot 80%);
+
+    ::selection {
+      color: #ffffff;
+      background: $siteshot;
+    }
+  }
+
+  .panel--screenshot {
+    text-align: center;
   }
 }
