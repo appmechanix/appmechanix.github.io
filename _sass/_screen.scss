@@ -12,5 +12,13 @@ p {
   line-height: 150%;
 }
 
+.container {
+  max-width: 820px;
+  margin: 0 auto;
+}
+
+
 @import "panel";
+@import "buttons";
+@import "contact";
 @import "footer";

@@ -1,0 +1,27 @@
+@import "colours";
+
+.btn {
+  border: 2px solid white;
+  border-radius: 5px;
+  padding: 10px;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s;
+
+  &.btn--shnappy {
+    &:hover {
+      background: white;
+      color: $shnappy;
+    }
+  }
+
+  &.btn--quizblaster {
+    &:hover {
+      background: white;
+      color: $qb;
+    }
+  }
+}
