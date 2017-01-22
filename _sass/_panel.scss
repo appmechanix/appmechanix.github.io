@@ -1,5 +1,6 @@
 .panel {
   width: 100%;
+  min-height: 200px;
   border-bottom: 2px solid white;
   padding-top: 100px;
   padding-bottom: 100px;
@@ -24,6 +25,19 @@
     font-size: 24px;
   }
 
+  h5 {
+    font-size: 24px;
+    text-align: center;
+
+    &.title--topborder {
+      $spacing: 20px;
+
+      border-top: 1px solid #efefef;
+      margin-top: $spacing;
+      padding-top: $spacing;
+    }
+  }
+
   img {
     max-width: 100%;
   }
@@ -42,6 +56,10 @@
       text-align: center;
       font-size: 32px;
     }
+  }
+
+  &.panel--about {
+    background: white;
   }
 
   &.panel--shnappy {
