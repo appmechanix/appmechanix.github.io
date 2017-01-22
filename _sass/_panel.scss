@@ -1,4 +1,5 @@
 @import "colours";
+@import "breakpoints";
 
 .panel {
   width: 100%;
@@ -6,8 +7,22 @@
   padding-top: 100px;
   padding-bottom: 100px;
 
+  .mobile-only {
+    text-align: center;
+  }
+
+  @media(max-width: $bp-ipad) {
+    .appscreenshot {
+      margin-bottom: 20px;
+    }
+  }
+
   h3, h4 {
     color: white;
+
+    @media(max-width: $bp-ipad) {
+      text-align: center;
+    }
   }
 
   h3 {
@@ -30,6 +45,24 @@
       border-top: 1px solid #efefef;
       margin-top: $spacing;
       padding-top: $spacing;
+    }
+  }
+
+  h3.commingsoon {
+    position: relative;
+
+    span {
+      position: absolute;
+      font-size: 12px;
+      font-weight: 100;
+      left: 0;
+      top: -25px;
+      opacity: 0.6;
+
+      @media(max-width: $bp-ipad) {
+        left: 20px;
+        top: -280px;
+      }
     }
   }
 
