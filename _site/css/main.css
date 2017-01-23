@@ -217,3 +217,19 @@ footer {
   color: white; }
   footer p {
     text-align: center; }
+
+.logo {
+  text-indent: -9999px;
+  background: no-repeat;
+  background-size: contain; }
+  .logo span {
+    text-indent: 0; }
+  .logo.logo--text {
+    text-indent: 0; }
+  .logo.logo--quizblaster {
+    background-image: url(/img/quizblaster/logo.png);
+    margin-bottom: 10px; }
+  .logo.logo--shnappy {
+    font-family: 'Asap', sans-serif !important; }
+  .logo.logo--hooq {
+    background-image: url(/img/hooq/logo.png); }

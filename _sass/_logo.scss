@@ -1,0 +1,26 @@
+.logo {
+  text-indent: -9999px;
+  background: no-repeat;
+  background-size: contain;
+
+  span {
+    text-indent: 0;
+  }
+
+  &.logo--text {
+    text-indent: 0;
+  }
+
+  &.logo--quizblaster {
+    background-image: url(/img/quizblaster/logo.png);
+    margin-bottom: 10px;
+  }
+
+  &.logo--shnappy {
+    font-family: 'Asap', sans-serif !important;
+  }
+
+  &.logo--hooq {
+    background-image: url(/img/hooq/logo.png);
+  }
+}
