@@ -14,6 +14,7 @@
   &.logo--quizblaster {
     background-image: url(/img/quizblaster/logo.png);
     margin-bottom: 10px;
+    height: 47px;
   }
 
   &.logo--shnappy {
@@ -21,10 +22,12 @@
   }
 
   &.logo--hooq {
+    margin-bottom: 10px;
     background-image: url(/img/hooq/logo.png);
   }
 
   &.logo--siteshot {
     background-image: url(/img/siteshot/logo.png);
+    margin-bottom: 10px;
   }
 }
