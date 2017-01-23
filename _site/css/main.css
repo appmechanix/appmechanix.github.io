@@ -166,7 +166,7 @@ p {
       color: #ffffff;
       background: #00b3fe; }
   .panel.panel--hooq {
-    background: radial-gradient(at bottom, #d8ffff, #74cfae 80%); }
+    background: radial-gradient(at bottom, #b0ffea, #74cfae 80%); }
     .panel.panel--hooq ::selection {
       color: #ffffff;
       background: #74cfae; }
@@ -233,3 +233,5 @@ footer {
     font-family: 'Asap', sans-serif !important; }
   .logo.logo--hooq {
     background-image: url(/img/hooq/logo.png); }
+  .logo.logo--siteshot {
+    background-image: url(/img/siteshot/logo.png); }
