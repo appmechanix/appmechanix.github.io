@@ -193,14 +193,17 @@ a {
     margin-top: 20px;
     font-size: 15px; }
   .panel.panel--hero {
-    background: white url(/img/hero.jpg) no-repeat center;
-    background-size: cover; }
+    background: white url(/img/hero.jpg) no-repeat top center;
+    background-size: cover;
+    height: 300px; }
     .panel.panel--hero h1 {
       text-align: center;
-      font-size: 48px; }
+      font-size: 48px;
+      color: white; }
     .panel.panel--hero h2 {
       text-align: center;
-      font-size: 32px; }
+      font-size: 32px;
+      color: white; }
   .panel.panel--about {
     background: white; }
     .panel.panel--about p {
