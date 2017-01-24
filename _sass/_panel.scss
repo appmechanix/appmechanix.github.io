@@ -4,14 +4,74 @@
 .panel {
   width: 100%;
   border-bottom: 2px solid white;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 25px;
+  padding-bottom: 50px;
+
+  @media(min-width: $bp-iphone) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  &:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
 
   .mobile-only {
     text-align: center;
   }
 
-  @media(max-width: $bp-ipad) {
+  .panel-screenshot {
+    width: 100%;
+
+    @media(min-width: $bp-iphone) {
+      float: left;
+      width: 60%;
+    }
+
+    img {
+      min-width: 90%;
+      max-width: 90%;
+    }
+
+    &.panel-screenshot--right {
+      float: right;
+      text-align: right;
+    }
+  }
+
+  .panel-text {
+    width: 100%;
+
+    @media(min-width: $bp-iphone) {
+      float: left;
+      width: 40%;
+    }
+  }
+
+  .panel-screenshot--mobileonly {
+    display: none;
+    text-align: center;
+
+    @media(max-width: $bp-iphone) {
+      display: block;
+    }
+  }
+
+  .panel-screenshot--nomobile {
+    display: none;
+    text-align: left;
+
+    @media(min-width: $bp-iphone) {
+      display: block;
+    }
+  }
+
+  @media(min-width: $bp-iphone) {
     .appscreenshot {
       margin-bottom: 20px;
     }
@@ -59,7 +119,7 @@
       top: -25px;
       opacity: 0.6;
 
-      @media(max-width: $bp-ipad) {
+      @media(max-width: $bp-iphone) {
         left: 20px;
         top: -280px;
       }
@@ -70,11 +130,6 @@
     color: white;
     margin-top: 20px;
     font-size: 15px;
-  }
-
-  img {
-    min-width: 90%;
-    max-width: 90%;
   }
 
   &.panel--hero {
@@ -107,6 +162,10 @@
     ::selection {
       color: #ffffff;
       background: $shnappy;
+    }
+
+    .panel-screenshot {
+      margin-top: 50px;
     }
   }
 

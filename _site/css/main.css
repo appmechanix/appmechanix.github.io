@@ -110,11 +110,52 @@ a {
 .panel {
   width: 100%;
   border-bottom: 2px solid white;
-  padding-top: 100px;
-  padding-bottom: 100px; }
+  padding-top: 25px;
+  padding-bottom: 50px; }
+  @media (min-width: 568px) {
+    .panel {
+      padding-top: 100px;
+      padding-bottom: 100px; } }
+  .panel:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0; }
   .panel .mobile-only {
     text-align: center; }
-  @media (max-width: 1024px) {
+  .panel .panel-screenshot {
+    width: 100%; }
+    @media (min-width: 568px) {
+      .panel .panel-screenshot {
+        float: left;
+        width: 60%; } }
+    .panel .panel-screenshot img {
+      min-width: 90%;
+      max-width: 90%; }
+    .panel .panel-screenshot.panel-screenshot--right {
+      float: right;
+      text-align: right; }
+  .panel .panel-text {
+    width: 100%; }
+    @media (min-width: 568px) {
+      .panel .panel-text {
+        float: left;
+        width: 40%; } }
+  .panel .panel-screenshot--mobileonly {
+    display: none;
+    text-align: center; }
+    @media (max-width: 568px) {
+      .panel .panel-screenshot--mobileonly {
+        display: block; } }
+  .panel .panel-screenshot--nomobile {
+    display: none;
+    text-align: left; }
+    @media (min-width: 568px) {
+      .panel .panel-screenshot--nomobile {
+        display: block; } }
+  @media (min-width: 568px) {
     .panel .appscreenshot {
       margin-bottom: 20px; } }
   .panel h3, .panel h4 {
@@ -143,7 +184,7 @@ a {
       left: 0;
       top: -25px;
       opacity: 0.6; }
-      @media (max-width: 1024px) {
+      @media (max-width: 568px) {
         .panel h3.commingsoon span {
           left: 20px;
           top: -280px; } }
@@ -151,9 +192,6 @@ a {
     color: white;
     margin-top: 20px;
     font-size: 15px; }
-  .panel img {
-    min-width: 90%;
-    max-width: 90%; }
   .panel.panel--hero {
     background: white url(/img/hero.jpg) no-repeat center;
     background-size: cover; }
@@ -173,6 +211,8 @@ a {
     .panel.panel--shnappy ::selection {
       color: #ffffff;
       background: #ea2378; }
+    .panel.panel--shnappy .panel-screenshot {
+      margin-top: 50px; }
   .panel.panel--quizblaster {
     background: radial-gradient(at bottom, #64ffff, #00b3fe 80%); }
     .panel.panel--quizblaster ::selection {
@@ -252,6 +292,18 @@ input[type='text'], input[type='email'], textarea {
   .form-group input:focus, .form-group textarea:focus {
     outline-width: 0; }
 
+@media (max-width: 1024px) {
+  .no-mobile {
+    display: none; }
+
+  .mobile-only {
+    display: block; } }
+@media (min-width: 1024px) {
+  .no-mobile {
+    display: block; }
+
+  .mobile-only {
+    display: none; } }
 .logo {
   text-indent: -9999px;
   background: no-repeat;
@@ -264,11 +316,23 @@ input[type='text'], input[type='email'], textarea {
     background-image: url(/img/quizblaster/logo.png);
     margin-bottom: 10px;
     height: 47px; }
+    @media (max-width: 568px) {
+      .logo.logo--quizblaster {
+        margin: 10px auto;
+        width: 74%; } }
   .logo.logo--shnappy {
     font-family: 'Asap', sans-serif !important; }
   .logo.logo--hooq {
     margin-bottom: 10px;
     background-image: url(/img/hooq/logo.png); }
+    @media (max-width: 568px) {
+      .logo.logo--hooq {
+        margin: 10px auto;
+        width: 36%; } }
   .logo.logo--siteshot {
     background-image: url(/img/siteshot/logo.png);
     margin-bottom: 10px; }
+    @media (max-width: 568px) {
+      .logo.logo--siteshot {
+        margin: 10px auto;
+        width: 35%; } }

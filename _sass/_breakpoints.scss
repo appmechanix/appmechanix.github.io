@@ -2,7 +2,7 @@ $bp-desktop: 1200px;
 $bp-ipad: 1024px;
 $bp-iphone: 568px;
 
-@media(max-width: $bp-ipad) {
+@media (max-width: $bp-ipad) {
   .no-mobile {
     display: none;
   }
@@ -12,7 +12,7 @@ $bp-iphone: 568px;
   }
 }
 
-@media(min-width: $bp-ipad) {
+@media (min-width: $bp-ipad) {
   .no-mobile {
     display: block;
   }

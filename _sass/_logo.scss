@@ -1,3 +1,6 @@
+@import "colours";
+@import "breakpoints";
+
 .logo {
   text-indent: -9999px;
   background: no-repeat;
@@ -15,6 +18,11 @@
     background-image: url(/img/quizblaster/logo.png);
     margin-bottom: 10px;
     height: 47px;
+
+    @media(max-width: $bp-iphone) {
+      margin: 10px auto;
+      width: 74%;
+    }
   }
 
   &.logo--shnappy {
@@ -24,10 +32,20 @@
   &.logo--hooq {
     margin-bottom: 10px;
     background-image: url(/img/hooq/logo.png);
+
+    @media(max-width: $bp-iphone) {
+      margin: 10px auto;
+      width: 36%;
+    }
   }
 
   &.logo--siteshot {
     background-image: url(/img/siteshot/logo.png);
     margin-bottom: 10px;
+
+    @media(max-width: $bp-iphone) {
+      margin: 10px auto;
+      width: 35%;
+    }
   }
 }
