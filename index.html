@@ -22,7 +22,7 @@ layout: default
     Our apps
 </h5>
 
-<div class="panel panel--shnappy">
+<div class="panel panel--shnappy" id="trigger1">
     <div class="container">
         <div class="panel-screenshot panel-screenshot--mobileonly">
             <img class="appscreenshot"
@@ -42,12 +42,12 @@ layout: default
             </p>
         </div>
         <div class="panel-screenshot panel-screenshot--right panel-screenshot--nomobile">
-            <img src="/img/shnappy/hero.png">
+            <img src="/img/shnappy/hero.png" id="screenshot-shnappy">
         </div>
     </div>
 </div>
 
-<div class="panel panel--quizblaster">
+<div class="panel panel--quizblaster" id="trigger2">
     <div class="container">
         <div class="panel-screenshot panel-screenshot--mobileonly">
             <img
@@ -58,6 +58,7 @@ layout: default
         </div>
         <div class="panel-screenshot panel-screenshot--nomobile">
             <img
+                    id="screenshot-quizblaster"
                     src="/img/quizblaster/hero.png"
                     srcset="/img/quizblaster/hero.2x.png 2x"
             >
@@ -77,7 +78,7 @@ layout: default
     </div>
 </div>
 
-<div class="panel panel--hooq">
+<div class="panel panel--hooq" id="trigger3">
     <div class="container">
         <div class="panel-screenshot panel-screenshot--mobileonly">
             <img
@@ -99,13 +100,13 @@ layout: default
             </p>
         </div>
         <div class="panel-screenshot panel-screenshot--right panel-screenshot--nomobile">
-            <img src="/img/hooq/hero.png" srcset="/img/hooq/hero.2x.png 2x">
+            <img id="screenshot-hooq" src="/img/hooq/hero.png" srcset="/img/hooq/hero.2x.png 2x">
         </div>
 
     </div>
 </div>
 
-<div class="panel panel--siteshot">
+<div class="panel panel--siteshot" id="trigger4">
     <div class="container">
         <div class="panel-screenshot panel-screenshot--mobileonly">
             <img
@@ -116,6 +117,7 @@ layout: default
         </div>
         <div class="panel-screenshot panel-screenshot--nomobile">
             <img
+                    id="screenshot-siteshot"
                     src="/img/siteshot/hero.png"
                     srcset="/img/siteshot/hero.2x.png 2x"
             >
@@ -174,3 +176,43 @@ layout: default
         </div>
     </div>
 </div>
+
+{% include _scripts.html %}
+
+<script>
+    $(function () {
+        var controller = new ScrollMagic.Controller();
+
+        new ScrollMagic.Scene({
+            triggerElement: "#trigger1",
+            reverse: false,
+            offset: -100
+        })
+            .setTween("#screenshot-shnappy", 0.5, {left: 0})
+            .addTo(controller);
+
+        new ScrollMagic.Scene({
+            triggerElement: "#trigger2",
+            reverse: false,
+            offset: -100
+        })
+            .setTween("#screenshot-quizblaster", 0.5, {left: 0})
+            .addTo(controller);
+
+        new ScrollMagic.Scene({
+            triggerElement: "#trigger3",
+            reverse: false,
+            offset: -100
+        })
+            .setTween("#screenshot-hooq", 0.5, {left: 0})
+            .addTo(controller);
+
+        new ScrollMagic.Scene({
+            triggerElement: "#trigger4",
+            reverse: false,
+            offset: -100
+        })
+            .setTween("#screenshot-siteshot", 0.5, {left: 0})
+            .addTo(controller);
+    });
+</script>

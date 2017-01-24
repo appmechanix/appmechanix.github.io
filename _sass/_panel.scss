@@ -6,6 +6,7 @@
   border-bottom: 2px solid white;
   padding-top: 25px;
   padding-bottom: 50px;
+  overflow-x: hidden;
 
   @media(min-width: $bp-iphone) {
     padding-top: 100px;
@@ -36,11 +37,17 @@
     img {
       min-width: 90%;
       max-width: 90%;
+      position: relative;
+      left: -200%;
     }
 
     &.panel-screenshot--right {
       float: right;
       text-align: right;
+
+      img {
+        left: 200%;
+      }
     }
   }
 
