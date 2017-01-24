@@ -205,7 +205,8 @@ a {
     background: white; }
     .panel.panel--about p {
       margin-top: 0;
-      color: #333; }
+      color: #333;
+      font-size: 18px; }
   .panel.panel--shnappy {
     background: radial-gradient(at bottom, #ff87dc, #ea2378 80%); }
     .panel.panel--shnappy ::selection {
