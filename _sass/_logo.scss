@@ -48,4 +48,19 @@
       width: 35%;
     }
   }
+
+  &.logo--appmechanix {
+    background-image: url(/img/logo.png);
+    background-size: cover;
+    height: 179px;
+    width: 400px;
+    margin: 10px auto;
+    position: relative;
+    left: -17px;
+
+    @media(max-width: $bp-iphone) {
+      margin: 10px auto;
+      width: 35%;
+    }
+  }
 }
