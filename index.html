@@ -36,7 +36,7 @@ layout: default
                 </p>
 
                 <p>
-                    <a class="btn btn--shnappy" href="https://shnappy.com">Shnappy.com</a>
+                    <a class="btn btn--block btn--shnappy" href="https://shnappy.com">Shnappy.com</a>
                 </p>
             </div>
             <div class="pure-u-2-3 no-mobile">
@@ -71,7 +71,7 @@ layout: default
                 </p>
 
                 <p>
-                    <a class="btn btn--quizblaster" href="https://quizblaster.com">QuizBlaster.com</a>
+                    <a class="btn btn--block btn--quizblaster" href="https://quizblaster.com">QuizBlaster.com</a>
                 </p>
             </div>
         </div>
@@ -97,7 +97,7 @@ layout: default
                 </p>
 
                 <p>
-                    <a class="btn btn--hooq" href="http://hooq.io">hooq.io</a>
+                    <a class="btn btn--block btn--hooq" href="http://hooq.io">hooq.io</a>
                 </p>
             </div>
             <div class="pure-u-2-3 no-mobile panel--screenshot">
@@ -136,7 +136,7 @@ layout: default
                 </p>
 
                 <p>
-                    <a class="btn btn--siteshot" href="https://siteshot.io">SiteShot.io</a>
+                    <a class="btn btn--block btn--siteshot" href="https://siteshot.io">SiteShot.io</a>
                 </p>
             </div>
         </div>
@@ -152,6 +152,28 @@ layout: default
                 <p>
                     <a href="mailto:hello@appmechanix.com">hello@appmechanix.com</a>
                 </p>
+            </div>
+            <div class="pure-u-1-2">
+                <form action="https://formspree.io/hello@shnappy.com" method="POST">
+                    <input type="hidden" name="_next" value="http://appmechanix.com/contacted"/>
+                    <div class="form-group">
+                        <label class="hidden" for="name">Your first name</label>
+                        <input class="form-control" type="text" name="name" id="name" placeholder="Your first name"
+                               value="">
+                    </div>
+                    <div class="form-group">
+                        <label class="hidden" for="_replyto">Your email address</label>
+                        <input class="form-control" type="email" name="_replyto" id="email"
+                               placeholder="Your email address" value="">
+                    </div>
+                    <div class="form-group">
+                        <label class="hidden" for="comment">Your comment</label>
+                        <textarea name="comment" rows="10" id="comment" placeholder="Your message for us"></textarea>
+                    </div>
+                    <div class="form-group text--right">
+                        <input class="btn btn--green" type="submit" value="Send">
+                    </div>
+                </form>
             </div>
         </div>
     </div>

@@ -4,12 +4,15 @@
   border: 2px solid white;
   border-radius: 5px;
   padding: 10px;
-  display: block;
   text-align: center;
   text-decoration: none;
   color: white;
   cursor: pointer;
   transition: all 0.3s;
+
+  &.btn--block {
+    display: block;
+  }
 
   &.btn--shnappy {
     &:hover {
@@ -37,5 +40,9 @@
       background: white;
       color: $siteshot;
     }
+  }
+
+  &.btn--green {
+    background: $success-green;
   }
 }
