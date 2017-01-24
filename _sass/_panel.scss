@@ -38,7 +38,8 @@
       min-width: 90%;
       max-width: 90%;
       position: relative;
-      left: -200%;
+      left: -10%;
+      opacity: 0;
     }
 
     &.panel-screenshot--right {
@@ -46,7 +47,7 @@
       text-align: right;
 
       img {
-        left: 200%;
+        left: 10%;
       }
     }
   }

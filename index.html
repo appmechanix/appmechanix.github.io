@@ -4,13 +4,13 @@ layout: default
 
 <div class="panel panel--hero">
     <div class="container">
-        <h1 class="logo logo--appmechanix">App Mechanix</h1>
+        <h1 class="fadein logo logo--appmechanix">App Mechanix</h1>
     </div>
 </div>
 
 <div class="panel panel--about">
     <div class="container">
-        <p>
+        <p class="fadein fadein--level2">
             App Mechanix is all about amazing apps. We're a boutique studio that creates the apps we'd like to use
             ourselves. We publish QuizBlaster, a leading multiplayer quiz game for Windows and iOS. Our development
             studio is based in Wellington, New Zealand.
@@ -18,17 +18,17 @@ layout: default
     </div>
 </div>
 
-<h5 class="text--center ourapps-heading">
+<h5 class="text--center ourapps-heading fadein fadein--level3">
     Our apps
 </h5>
 
 <div class="panel panel--shnappy" id="trigger1">
     <div class="container">
-        <div class="panel-screenshot panel-screenshot--mobileonly">
+        <div class="panel-screenshot panel-screenshot--mobileonly fadein fadein--level4">
             <img class="appscreenshot"
                  src="/img/shnappy/hero.png">
         </div>
-        <div class="panel-text">
+        <div class="panel-text fadein fadein--level4">
             <h3 class="logo logo--text logo--shnappy">Shnappy</h3>
             <h4>Awesome photo sharing for photographers</h4>
 
@@ -41,29 +41,30 @@ layout: default
                 <a class="btn btn--block btn--shnappy" href="https://shnappy.com">Shnappy.com</a>
             </p>
         </div>
-        <div class="panel-screenshot panel-screenshot--right panel-screenshot--nomobile">
-            <img src="/img/shnappy/hero.png" id="screenshot-shnappy">
+        <div class="panel-screenshot panel-screenshot--right panel-screenshot--nomobile fadein fadein--level4">
+            <img src="/img/shnappy/hero.png" srcset="/img/shnappy/hero.2x.png 2x"
+                 id="screenshot-shnappy">
         </div>
     </div>
 </div>
 
 <div class="panel panel--quizblaster" id="trigger2">
     <div class="container">
-        <div class="panel-screenshot panel-screenshot--mobileonly">
+        <div class="panel-screenshot panel-screenshot--mobileonly fadein fadein--level4">
             <img
                     class="appscreenshot"
                     src="/img/quizblaster/hero.png"
                     srcset="/img/quizblaster/hero.2x.png 2x"
             >
         </div>
-        <div class="panel-screenshot panel-screenshot--nomobile">
+        <div class="panel-screenshot panel-screenshot--nomobile fadein fadein--level4">
             <img
                     id="screenshot-quizblaster"
                     src="/img/quizblaster/hero.png"
                     srcset="/img/quizblaster/hero.2x.png 2x"
             >
         </div>
-        <div class="panel-text">
+        <div class="panel-text fadein fadein--level4">
             <h3 class="logo logo--quizblaster">QuizBlaster</h3>
             <h4>Brain to brain combat!</h4>
 
@@ -80,14 +81,14 @@ layout: default
 
 <div class="panel panel--hooq" id="trigger3">
     <div class="container">
-        <div class="panel-screenshot panel-screenshot--mobileonly">
+        <div class="panel-screenshot panel-screenshot--mobileonly fadein fadein--level4">
             <img
                     class="appscreenshot"
                     src="/img/hooq/hero.png"
                     srcset="/img/hooq/hero.2x.png 2x"
             >
         </div>
-        <div class="panel-text">
+        <div class="panel-text fadein fadein--level4">
             <h3 class="logo logo--hooq">hooq</h3>
             <h4>Because webhooks don’t need to be hard.</h4>
 
@@ -99,7 +100,7 @@ layout: default
                 <a class="btn btn--block btn--hooq" href="http://hooq.io">hooq.io</a>
             </p>
         </div>
-        <div class="panel-screenshot panel-screenshot--right panel-screenshot--nomobile">
+        <div class="panel-screenshot panel-screenshot--right panel-screenshot--nomobile fadein fadein--level4">
             <img id="screenshot-hooq" src="/img/hooq/hero.png" srcset="/img/hooq/hero.2x.png 2x">
         </div>
 
@@ -108,21 +109,21 @@ layout: default
 
 <div class="panel panel--siteshot" id="trigger4">
     <div class="container">
-        <div class="panel-screenshot panel-screenshot--mobileonly">
+        <div class="panel-screenshot panel-screenshot--mobileonly fadein fadein--level4">
             <img
                     class="appscreenshot"
                     src="/img/siteshot/hero.png"
                     srcset="/img/siteshot/hero.2x.png 2x"
             >
         </div>
-        <div class="panel-screenshot panel-screenshot--nomobile">
+        <div class="panel-screenshot panel-screenshot--nomobile fadein fadein--level4">
             <img
                     id="screenshot-siteshot"
                     src="/img/siteshot/hero.png"
                     srcset="/img/siteshot/hero.2x.png 2x"
             >
         </div>
-        <div class="panel-text">
+        <div class="panel-text fadein fadein--level4">
             <h3 class="commingsoon logo logo--siteshot">
                 SiteShot
                 <span>Coming soon</span>
@@ -181,6 +182,10 @@ layout: default
 
 <script>
     $(function () {
+        setTimeout(function () {
+            $('.fadein').addClass('fadein--in');
+        }, 100);
+
         var controller = new ScrollMagic.Controller();
 
         new ScrollMagic.Scene({
@@ -188,7 +193,7 @@ layout: default
             reverse: false,
             offset: -100
         })
-            .setTween("#screenshot-shnappy", 0.5, {left: 0})
+            .setTween("#screenshot-shnappy", 0.5, {left: 0, opacity: 1})
             .addTo(controller);
 
         new ScrollMagic.Scene({
@@ -196,7 +201,7 @@ layout: default
             reverse: false,
             offset: -100
         })
-            .setTween("#screenshot-quizblaster", 0.5, {left: 0})
+            .setTween("#screenshot-quizblaster", 0.5, {left: 0, opacity: 1})
             .addTo(controller);
 
         new ScrollMagic.Scene({
@@ -204,7 +209,7 @@ layout: default
             reverse: false,
             offset: -100
         })
-            .setTween("#screenshot-hooq", 0.5, {left: 0})
+            .setTween("#screenshot-hooq", 0.5, {left: 0, opacity: 1})
             .addTo(controller);
 
         new ScrollMagic.Scene({
@@ -212,7 +217,7 @@ layout: default
             reverse: false,
             offset: -100
         })
-            .setTween("#screenshot-siteshot", 0.5, {left: 0})
+            .setTween("#screenshot-siteshot", 0.5, {left: 0, opacity: 1})
             .addTo(controller);
     });
 </script>
