@@ -3,6 +3,7 @@ gem install jekyll
 jekyll build
 
 npm install
+npm install -g grunt
 grunt build
 
 cd deploy
@@ -10,5 +11,4 @@ node addVersion $CIRCLE_BUILD_NUM
 sleep 2s
 cd ../
 
-scp -P 63622 -r _site/ shnapper@shnappy.com:/var/apps/appmechanix-site/
-scp -P 51316 -r _site/ shnapper@shnappy.com:/var/apps/appmechanix-site/
+scp -r _site/ shnapper@52.183.1.252:/var/apps/appmechanix-site/
