@@ -3,7 +3,7 @@ version: 2
 jobs:
   deploy:
     docker:
-      - image: circleci/ruby:2.4.1-node-browsers
+      - image: circleci/node:7.10
 
     steps:
       - checkout
