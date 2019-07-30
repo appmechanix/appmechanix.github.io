@@ -1,9 +1,14 @@
 #!/bin/sh
-gem install jekyll
-jekyll build
 
+sudo npm install -g grunt-cli
 npm install
-npm install -g grunt
+
+bundle install --jobs=4 --retry=3 --path vendor/bundle
+
+gem install jekyll
+
+bundle exec jekyll build --config _config.yml
+
 grunt build
 
 cd deploy
