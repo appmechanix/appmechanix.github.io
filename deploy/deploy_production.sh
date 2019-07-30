@@ -11,4 +11,4 @@ node addVersion $CIRCLE_BUILD_NUM
 sleep 2s
 cd ../
 
-scp -r _site/ shnapper@52.183.1.252:/var/apps/appmechanix-site/
+scp -o StrictHostKeyChecking=no -r _site/ shnapper@52.183.1.252:/var/apps/appmechanix-site/
